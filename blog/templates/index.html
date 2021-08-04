@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>DIY Blog Home</h1>
+
+<p>Welcome {{ user.get_username }} to <em>DIY Blog</em></p>
+
+
+<div>
+{% load static %}
+<img src="{% static "images/bg.jpg" %}" alt="My image" style="width:555px;height:540px;"/>
+</div>  
+
+{% endblock %}
